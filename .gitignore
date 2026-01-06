@@ -1,6 +1,5 @@
 #test 
 tests/
-test_files/
 
 # Archivos de compilación y empaquetado
 build/
