@@ -1,5 +1,5 @@
 """Pipeline Functions Module."""
 
-from .pipelines_config import PIPELINES_FUNCTIONS
+from .pipelines_config import PIPELINES_FUNCTIONS, add_pipelines_set_to_registry
 
-__all__ = ["PIPELINES_FUNCTIONS"]
+__all__ = ["PIPELINES_FUNCTIONS", "add_pipelines_set_to_registry"]
