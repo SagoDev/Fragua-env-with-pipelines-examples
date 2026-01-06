@@ -1,0 +1,1 @@
+"""Fragua Environment Configuration."""
