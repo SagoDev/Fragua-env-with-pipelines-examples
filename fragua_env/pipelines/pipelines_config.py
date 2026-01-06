@@ -5,10 +5,12 @@ from typing import List
 from fragua import FraguaPipeline, FraguaRegistry, FraguaSet
 
 from .from_excel.excel_to_csv import excel_to_csv
+from .from_api.api_to_excel import api_to_excel
 
 
 PIPELINES_FUNCTIONS: List[FraguaPipeline] = [
     excel_to_csv,
+    api_to_excel,
 ]
 
 
