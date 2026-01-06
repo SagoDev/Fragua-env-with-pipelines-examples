@@ -3,8 +3,9 @@
 from fragua.core.step_index import FraguaStepIndex
 from fragua_env.steps.extraction import EXTRACTION_STEPS
 from fragua_env.steps.loading import LOADING_STEPS
+from fragua_env.steps.transformation import TRANSFORMATION_STEPS
 
-DICTS_LIST = [EXTRACTION_STEPS, LOADING_STEPS]
+DICTS_LIST = [EXTRACTION_STEPS, TRANSFORMATION_STEPS, LOADING_STEPS]
 
 
 def create_step_index() -> FraguaStepIndex:
