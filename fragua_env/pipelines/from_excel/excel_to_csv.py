@@ -1,16 +1,22 @@
-"""Pipeline for convert data from an excel into csv."""
+"""Pipeline for extract data from an excel to csv file."""
 
 from pathlib import Path
 from fragua import FraguaPipeline
 
 from fragua_env.steps import STEP_INDEX
 
-BASE_DIR = Path(__file__).parent
+# -----------------------------------
+# Pipeline Example: excel to csv
+# -----------------------------------
 
+# Path created for example use
+BASE_DIR = Path(__file__).parent
 INPUT_FILE = BASE_DIR / "test_files" / "input_files" / "test_data.xlsx"
 
+# Create Empty pipeline
 excel_to_csv = FraguaPipeline("excel_to_csv")
 
+# Create first step: extract from excel
 extract_from_excel = (
     STEP_INDEX.get("extract_from_excel")
     .with_params(path=INPUT_FILE)
@@ -19,6 +25,7 @@ extract_from_excel = (
 )
 
 
+# Create second step: load to csv
 load_to_csv = (
     STEP_INDEX.get("load_to_csv")
     .with_params(filename="excel_to_csv.csv")
@@ -27,7 +34,6 @@ load_to_csv = (
     .build()
 )
 
-
+# Add steps to the pipeline
 step_list = [extract_from_excel, load_to_csv]
-
 excel_to_csv.add(step_list)
