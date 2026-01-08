@@ -14,7 +14,7 @@ OUTPUT_FILE = BASE_DIR / "test_files" / "output_files"
 
 
 # Create declarative pipeline
-EXCEL_TO_TFM_EXCEL_PIP: Dict[str, Any] = {
+EXCEL_TO_TFM_EXCEL: Dict[str, Any] = {
     "name": "excel_to_transformed_excel",
     "steps": [
         {
@@ -52,7 +52,7 @@ EXCEL_TO_TFM_EXCEL_PIP: Dict[str, Any] = {
             "function": "load_to_excel",
             "params": {
                 "subdir": f"{OUTPUT_FILE}",
-                "filename": "excel_to_excel.xlsx",
+                "filename": "test_excel_to_excel.xlsx",
             },
             "use": "transformed_df",
             "save_as": "loaded_df",

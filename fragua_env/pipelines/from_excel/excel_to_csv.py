@@ -15,8 +15,8 @@ OUTPUT_FILE = BASE_DIR / "test_files" / "output_files"
 
 
 # Create declarative pipeline
-EXCEL_TO_CSV_DEC_PIP: dict[str, Any] = {
-    "name": "excel_cleaning_pipeline",
+EXCEL_TO_CSV: dict[str, Any] = {
+    "name": "excel_to_csv",
     "steps": [
         {
             "set": "extraction",
