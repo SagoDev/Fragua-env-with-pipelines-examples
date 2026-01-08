@@ -2,8 +2,8 @@
 
 from fragua import FraguaPipeline
 
-from fragua_env.steps import STEP_INDEX
-from fragua_env.utils.helpers import get_project_root
+from fragua_sets.utils.helpers import get_project_root
+
 
 # -----------------------------------
 # Pipeline Example: api to excel
