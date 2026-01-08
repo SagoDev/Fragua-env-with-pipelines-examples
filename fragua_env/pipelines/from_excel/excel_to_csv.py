@@ -27,7 +27,7 @@ EXCEL_TO_CSV: dict[str, Any] = {
         {
             "set": "loading",
             "function": "load_to_csv",
-            "params": {"subdir": f"{OUTPUT_FILE}", "filename": "test_data.csv"},
+            "params": {"subdir": f"{OUTPUT_FILE}", "filename": "test_exce_to_csv.csv"},
             "use": "raw_df",
             "save_as": "final_df",
         },
