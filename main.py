@@ -1,19 +1,14 @@
 """File Docstring."""
 
 from fragua_env.env_config import ENV
-from fragua_env.utils.enums import Pipelines
+from fragua_env.pipelines.from_excel import EXCEL_TO_CSV_DEC_PIP, EXCEL_TO_TFM_EXCEL_PIP
 
 
 def main():
     """Main Docstring."""
 
-    # [Optional]: Enums to validate pipelines names
-    api_to_excel = Pipelines.API_TO_EXCEL.value
-    excel_to_csv = Pipelines.EXCEL_TO_CSV.value
-
-    # Execute pipelines
-    ENV.run(api_to_excel)
-    ENV.run(excel_to_csv)
+    ENV.execute_pipeline(EXCEL_TO_CSV_DEC_PIP)
+    ENV.execute_pipeline(EXCEL_TO_TFM_EXCEL_PIP)
 
 
 if __name__ == "__main__":
