@@ -14,7 +14,7 @@ OUTPUT_FILE = BASE_DIR / "test_files" / "output_files"
 
 
 # Create declarative pipeline
-EXCEL_TO_TFM_EXCEL: Dict[str, Any] = {
+EXCEL_TO_TFD_EXCEL: Dict[str, Any] = {
     "name": "excel_to_transformed_excel",
     "steps": [
         {
