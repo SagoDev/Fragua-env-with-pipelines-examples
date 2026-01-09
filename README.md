@@ -27,14 +27,17 @@ This project is intended as a **learning and reference environment**, not as a p
 
 ---
 
-## 📦 Core Technologies
+## 🐍 Virtual Environment Recommendation
 
-- **Fragua 1.6.2** — Execution engine and orchestration primitives
-- **fragua-sets 1.4** — Predefined, reusable sets of functions and pipelines
-- **Python 3.12+**
-- **pandas** — Used in transformation and loading examples
+It is **strongly recommended** to run this project inside a **Python virtual environment** to ensure dependency isolation and reproducibility.
 
----
+Using a virtual environment helps to:
+
+- Avoid dependency conflicts with other Python projects
+- Ensure consistent package versions across executions
+- Keep the learning environment clean and predictable
+
+### Recommended setup (venv)
 
 ```bash
 # Create a virtual environment
@@ -57,3 +60,11 @@ pip install -r requirements.txt
 ```
 ---
 
+## 📦 Core Technologies
+
+- **Fragua 1.6.2** — Execution engine and orchestration primitives
+- **fragua-sets 1.4** — Predefined, reusable sets of functions.
+- **Python 3.12+**
+- **pandas** — Used in transformation and loading examples
+
+---
