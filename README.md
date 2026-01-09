@@ -29,47 +29,31 @@ This project is intended as a **learning and reference environment**, not as a p
 
 ## 📦 Core Technologies
 
-- **Fragua** — Execution engine and orchestration primitives
-- **fragua-sets** — Predefined, reusable sets of functions and pipelines
+- **Fragua 1.6.2** — Execution engine and orchestration primitives
+- **fragua-sets 1.4** — Predefined, reusable sets of functions and pipelines
 - **Python 3.12+**
 - **pandas** — Used in transformation and loading examples
 
 ---
 
-## 🧱 Conceptual Architecture
+```bash
+# Create a virtual environment
+python -m venv .venv
+```
 
-The environment is built around the following core concepts:
+```bash
+# Activate the virtual environment
+# Windows
+.venv\Scripts\activate
+```
 
-### FraguaStep
-- Represents a **single execution unit**
-- Wraps a pure function
-- Can define:
-  - Parameters
-  - Inputs (`use`)
-  - Outputs (`save_as`)
-
-### FraguaPipeline
-- An **ordered sequence of FraguaSteps**
-- Describes *what* should be executed, not *how*
-- Immutable by design
-
-### FraguaSet
-- A **named collection of reusable execution units**
-- Can contain:
-  - Callables
-  - Pipelines
-- Registered into a central registry
-
-### FraguaRegistry
-- Central lookup structure for:
-  - Sets
-  - Pipelines
-  - Execution units
-
-### FraguaAgent
-- Stateless executor
-- Receives a pipeline and executes it step by step
-- Holds no domain logic
-
+```bash
+# Linux / macOS
+source .venv/bin/activate
+```
+```bash
+# Install requirements
+pip install -r requirements.txt
+```
 ---
 
