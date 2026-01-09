@@ -92,9 +92,8 @@ def main():
 
     load_to_excel_step = (
         ENV.step_index.get("load_to_excel")
-        .with_params(filename="test_api_to_excel.xslx", subdir=OUTPUT_FILE)
-        .with_save_as("excel_to_csv_step_2")
-        .with_use("excel_to_csv_step_1")
+        .with_params(filename="test_api_to_excel.xlsx", subdir=OUTPUT_FILE)
+        .with_use("api_to_excel_step_1")
         .build()
     )
 
