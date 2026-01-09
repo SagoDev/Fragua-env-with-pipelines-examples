@@ -25,6 +25,7 @@ EXCEL_TO_TFM_EXCEL: Dict[str, Any] = {
         },
         {
             "macro": "transform_chain",
+            "set": "transformation",
             "start_from": "raw_df",
             "save_as": "transformed_df",
             "steps": [
@@ -35,7 +36,7 @@ EXCEL_TO_TFM_EXCEL: Dict[str, Any] = {
                     "function": "fill_missing_values",
                 },
                 {
-                    "function": "create_derived_column",
+                    "function": "add_total_price_derived_column",
                     "params": {
                         "col_a": "price",
                         "col_b": "quantity",
