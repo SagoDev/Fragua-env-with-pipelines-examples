@@ -1,2 +1,2 @@
-fragua-sets>=1.3
+fragua-sets>=1.6.2
 fragua>=1.4
