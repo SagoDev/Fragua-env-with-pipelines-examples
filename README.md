@@ -7,8 +7,7 @@ The goal is to demonstrate, incrementally and clearly, how to:
 - Configure and register **Fragua Sets** using `fragua-sets`
 - Create reusable **FraguaSteps**
 - Assemble **FraguaPipelines**
-- Execute pipelines using the **Fragua Agent**
-- Understand the architectural roles of each component
+- Execute pipelines using the **Fragua Environment**
 
 This project is intended as a **learning and reference environment**, not as a production-ready framework.
 
